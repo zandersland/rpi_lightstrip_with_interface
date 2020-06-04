@@ -206,6 +206,7 @@ class ledFunctions():
             strip.show()
             time.sleep(timesleepdelay)
         time.sleep(1)
+        b.set_light(['Duck1', 'Duck 2'], {'transitiontime': 0, 'on': False, 'bri': 142, 'sat': 223, 'hue': 7225})
     
     def set_strip_color(strip, color):
         for x in range(int(strip.numPixels())):
